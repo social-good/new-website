@@ -1,13 +1,13 @@
-#svg_map {
-	position: absolute;
-	left: 0px;
+svg {
 	background: black;
+	animation: expand 1s 1 ease-in;
+	animation-fill-mode: forwards;  
 }
 
 .land {
-	fill: #CCCCCC;
+	fill: #666;
 	fill-opacity: 1;
-	stroke:white;
+	stroke: #444;
 	stroke-opacity: 1;
 	stroke-width:0.5;
 }
@@ -85,6 +85,15 @@
 	animation: draw 2.1s infinite linear;
 }
 
+.activated-land {
+	fill: #777;
+	fill-opacity: 1;
+	stroke: #444;
+	stroke-opacity: 1;
+	stroke-width:0.5;
+	animation: activate 0.2s 1 linear;
+}
+
 .influx-line {
 	position: absolute;
 	fill-opacity: 0;
@@ -118,6 +127,28 @@
 	animation: draw 2.1s 1 linear;
 }
 
+@keyframes activate {
+	0% {
+		fill: #777;
+	}
+	100% {
+		fill: #666;
+	}
+}
+
+@keyframes expand {
+	0% {
+		height: 359px;
+		width: 561px;
+		left: calc((100vw - 561px)/2);
+	}
+	100% {
+		height: 655px;
+		width: 1020px;
+		left: calc((100vw - 1020px)/2);
+	}
+}
+
 @keyframes draw {
   50% {
     stroke-dashoffset: 0;
@@ -131,4 +162,3 @@
   	stroke: transparent;
   }
 }
-

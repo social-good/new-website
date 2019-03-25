@@ -18,6 +18,7 @@ window.onload = async () => {
 				var destinationCoords = document.getElementById(`${destinationCode}_centroid`);
 				if (originCoords == null || destinationCoords == null)
 					console.log(originCode, originCoords, destinationCode, destinationCoords);
+				const involvedLands = [document.getElementById(originCode), document.getElementById(destinationCode)]
 				newPath = document.createElementNS("http://www.w3.org/2000/svg", 'path');
 				if (destinationCode == 'GB') {
 					newPath.setAttribute('class', 'influx-line');
@@ -27,21 +28,28 @@ window.onload = async () => {
 					newPath.setAttribute('class', 'peripheral-line');
 				}
 				const id = `${year}_${i}_${j}`;
+				involvedLands[0].classList.remove('activated-land');
+				involvedLands[1].classList.remove('activated-land');
+				involvedLands[0].classList.add('activated-land');
+				involvedLands[1].classList.add('activated-land');
+				console.log(involvedLands[0].classList, involvedLands[1].classList)
+
 				newPath.setAttribute('id', id);
 				newPath.setAttribute('stroke-width', weight);
 				newPath.setAttribute('d', `M ${originCoords.cx.animVal.value},${originCoords.cy.animVal.value+0.5} L ${destinationCoords.cx.animVal.value},${destinationCoords.cy.animVal.value+0.5}`);
-				
+
 				document.getElementById('land-centroids-and-arcs').appendChild(newPath);
 				setTimeout(() => {
 					var oldPath = document.getElementById(id);
 					oldPath.parentNode.removeChild(oldPath);
-				}, 2100)
+					involvedLands[0].classList.remove('activated-land');
+					involvedLands[1].classList.remove('activated-land');
+				}, 2100);
 			}
 		}
 		await sleep(100);
 
 	}
-
 
 }
 

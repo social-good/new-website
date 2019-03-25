@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Stay for the Credits</title>
-	<link rel="stylesheet" type="text/css" href="/Users/danielkawalsky/Documents/Code/SocialGood/worldtest/style.css" />
+	<link rel="stylesheet" type="text/css" href="/Users/danielkawalsky/Documents/Code/SocialGood/worldtest/mapStyle.css" />
+	<link rel="stylesheet" type="text/css" href="/Users/danielkawalsky/Documents/Code/SocialGood/worldtest/index.css" />
 	<script type="text/javascript" src="./drawArcs.js"></script>
 </head>
 <body>
@@ -10,9 +11,37 @@
 		xmlns:cc="http://creativecommons.org/ns#" 
 		xmlns:svg="http://www.w3.org/2000/svg" 
 		xmlns="http://www.w3.org/2000/svg" 
-		height="775" 
-		width="1200" 
-		viewBox="0 0 1200 775">
+		viewBox="0 0 1020 655">
+		<g id="size-control">
+			<g id="maximize" transform="scale(0.5) translate(20,20)" >
+				<rect
+					rx="2"
+					style="fill:black;stroke:white;stroke-width:5px"
+					height="40"
+					width="40" />
+				<rect
+					style="stroke-width:5px;stroke:white;fill:white;"
+					rx="2"
+					height="8.5"
+					width="40"/>
+			</g>
+			<g id="minimize" transform="scale(0.5) translate(20,20)">
+				<rect
+					rx="2"
+					style="fill:black;stroke:white;stroke-width:5px"
+					height="40"
+					width="40"
+					id="rect10" />
+				<rect
+					style="stroke-width:2px; stroke: white; fill:white;"
+					rx="2"
+					y="28"
+					x="8.75"
+					height="5"
+					width="22.5"
+					id="rect12" />
+			</g>
+		</g>
 		<g id="land-centroids-and-arcs">
 			<path id="AD" title="Andorra" class="land" d="M480.487,331.376L480.41,331.401L480.152,331.556L480.005,331.61L479.871,331.637L479.766,331.626L479.708,331.535L479.714,331.396L479.69,331.272L479.67,331.205L479.708,331.024L479.794,330.927L479.913,330.847L480.101,330.876L480.499,330.992L480.582,331.101L480.583,331.173L480.51,331.292z"></path>
 			
@@ -789,5 +818,18 @@
 			<circle class="centroid" id="YT_centroid" cx="602.498" cy="499.163"></circle>
 		</g>
 	</svg>
+
+	<div class="header">
+		<div class="header-title">
+			Stay for the Credits
+		</div>
+		<div class="header-subtitles">
+			A deep dive into films' most notoriously dull format reveals a wealth of information using nothing but names.
+		</div>
+	</div>
+
+	<div class="credits">
+
+	</div>
 </body>
 </html>
