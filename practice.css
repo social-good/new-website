@@ -1,0 +1,133 @@
+#svg_map {
+	position: absolute;
+	left: 0px;
+	background: black;
+}
+
+.land {
+	fill: #CCCCCC;
+	fill-opacity: 1;
+	stroke:white;
+	stroke-opacity: 1;
+	stroke-width:0.5;
+}
+
+
+.centroid: {
+	fill-opacity: 1;
+	stroke-opacity: 1;
+}
+
+.latitudeLineThin {
+	fill-opacity: 0;
+	stroke: #00F2;
+	stroke-width: 1;
+}
+
+.latitudeLineThick {
+	fill-opacity: 0;
+	stroke: #00F2;
+	stroke-width: 3;
+}
+
+.longitudeLineThin {
+	fill-opacity: 0;
+	stroke: #F002;
+	stroke-width: 1;
+}
+
+.longitudeLineThick {
+	fill-opacity: 0;
+	stroke: #F002;
+	stroke-width: 3;
+}
+
+#practiceline {
+	position: absolute;
+	fill-opacity: 0;
+	stroke: #F00;
+	stroke-width: 3;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: draw 2s infinite linear;
+}
+
+#practiceline2 {
+	position: absolute;
+	fill-opacity: 0;
+	stroke: #F80;
+	stroke-width: 1;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: draw 2.1s infinite linear;
+}
+
+#practiceline2east {
+	position: absolute;
+	fill-opacity: 0;
+	stroke: #00B4;
+	/*stroke-width: 1;*/
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	stroke-linecap: round;
+	animation: draw 2.1s infinite linear;
+}
+
+#practiceline2west {
+	position: absolute;
+	fill-opacity: 0;
+	stroke: #B004;
+	/*stroke-width: 1;*/
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	stroke-linecap: round;
+	animation: draw 2.1s infinite linear;
+}
+
+.influx-line {
+	position: absolute;
+	fill-opacity: 0;
+	stroke: #44F4;
+	/*stroke-width: 1;*/
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	stroke-linecap: round;
+	animation: draw 2.1s 1 linear;
+}
+
+.outflux-line {
+	position: absolute;
+	fill-opacity: 0;
+	stroke: #F444;
+	/*stroke-width: 1;*/
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	stroke-linecap: round;
+	animation: draw 2.1s 1 linear;
+}
+
+.peripheral-line {
+	position: absolute;
+	fill-opacity: 0;
+	stroke: #FFF4;
+	/*stroke-width: 1;*/
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	stroke-linecap: round;
+	animation: draw 2.1s 1 linear;
+}
+
+@keyframes draw {
+  50% {
+    stroke-dashoffset: 0;
+  }
+  98% {
+    stroke-dashoffset: 0;
+  	stroke: transparent;
+  }
+  100% {
+  	stroke-dashoffset: 0;
+  	stroke: transparent;
+  }
+}
+

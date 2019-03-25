@@ -1,0 +1,41 @@
+ - Add in all of the centroids
+ 	- I might be missing some. Check for 5, 5's and duplicates
+ 	- It looks like theres a centroid missing above Italy, just east of Switzerland
+ 	- why is algeria DZ?
+ 	- EH_centroid = western sahara
+ 	- HR = Croatia
+ 	- KP = North Korea ? Democratic People's Republic of NK 
+ 	- XK = Kosovo
+ 	- Lao People's Democratic Republic?
+ 	- Libya?
+ 	- Add in all of the countries I missed in worldtest from worldHigh
+ 	- Svalbard and Jan Mayen?
+ 	- KH = Cambodia?
+ - Map all of the ethnicities to nations
+ 	- Hispanic
+ 	- HispanoLatino
+ 	- AfricanAmerican
+ 	- Jewish
+ 	- NativeHawaiian
+ 	- Remove the DJ's and the XL, and the T.I.
+ 	- Rip Torn... really?
+ 	- Pakistanese (really?) Paki... right? (Ferdinand Lewis Alcindor French Kareem Abdul-Jabbar Pakistanese AfricanAmerican)
+ 	- NOTE: Stanley Martin Lieber (British/German) Stan Lee (Chinese/Korean)
+ 		- We have an issue. My hypothesis is based off the idea that people change their names because their names have roots in countries that are less appealing. 
+ 			- Basically, I assumed the diaspora option was the best call, when, in fact, it might be the nationality (ethnicity) because so many people change their names as immigrants. IDK. Fuck. The results were not what I expected. 
+ + Reduce all of the double augmented credits to the year they come into consideration. 
+ - Make the lines color coded 
+	 - (east is blue and west is red or something)
+	 	- and raise + lower by a 1/2-point to show each line. 
+	 - (size of the line is proportional to weight of diaspora count/score)
+ - Add in identifiers to the arcs
+ - Make the paths arcs
+ - Make the paths thicker based on quantity
+ - Make the paths alpha
+ - Remove the lines
+ - Remove the centroid markers
+ - Color the background
+ - Determine the land fill gray
+  - Give the paths onHover functionality
+ 	- Both countries are highlighted/come into focus
+ 	- Both countries' labels are shown
