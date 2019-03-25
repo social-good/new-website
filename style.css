@@ -13,10 +13,12 @@
 }
 
 .centroid: {
+	fill: #0000;
 	fill-opacity: 1;
 	stroke-opacity: 1;
 }
 
+/* DEBUG */
 .latitudeLineThin {
 	fill-opacity: 0;
 	stroke: #00F2;
@@ -41,7 +43,7 @@
 	stroke-width: 3;
 }
 
-#practiceline {
+.debugline1 {
 	position: absolute;
 	fill-opacity: 0;
 	stroke: #F00;
@@ -51,7 +53,7 @@
 	animation: draw 2s infinite linear;
 }
 
-#practiceline2 {
+.debugline2 {
 	position: absolute;
 	fill-opacity: 0;
 	stroke: #F80;
@@ -61,7 +63,7 @@
 	animation: draw 2.1s infinite linear;
 }
 
-#practiceline2east {
+.line-overall-east {
 	position: absolute;
 	fill-opacity: 0;
 	stroke: #00B4;
@@ -72,7 +74,7 @@
 	animation: draw 2.1s infinite linear;
 }
 
-#practiceline2west {
+.line-overall-west {
 	position: absolute;
 	fill-opacity: 0;
 	stroke: #B004;
