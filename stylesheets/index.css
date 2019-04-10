@@ -1,0 +1,70 @@
+body {
+	position: absolute;
+	color: white;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Verdana, Geneva, sans-serif
+}
+
+.map-panel {
+	position: fixed;
+	top: 0px;
+	height: 49.5vh;
+	border-bottom: 1px solid white;
+	width: 99.5vw;
+	z-index: 2;
+	pointer-events: none;
+	background-color: black;
+}
+
+.credits-layer {
+	position: absolute;
+	top: 49.5vh;
+	width: 100%;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.information-panel {
+	position: absolute;
+	top: 0px;
+	height: 99.5vh;
+	overflow-y: scroll;
+	background-color: black;
+}
+
+.information-panel .article {
+	width: 100%;
+	height: 49.5vh;
+	position: relative;
+	top: 49.5vh;
+	z-index: 1;
+}
+
+.information-panel .article .offset {
+	position: fixed;
+	top: 49.5vh;
+	width: 100%;
+	height: 10%;
+	background-image: linear-gradient(black, #0000);
+	z-index: 2;
+}
+.information-panel .article .header {
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.information-panel .article .sample-credits {
+	margin: 20px;
+	text-align: center;
+}
+
+.information-panel .article .header-title {
+	font-size: 70px;
+	font-weight: bold;
+}
+.information-panel .article .header-subtitle {
+	font-size: 20px;
+}
+

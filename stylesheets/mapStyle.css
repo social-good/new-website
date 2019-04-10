@@ -1,7 +1,13 @@
-svg {
-	background: black;
-	animation: expand 1s 1 ease-in;
-	animation-fill-mode: forwards;  
+#svg_map {
+	position: relative;
+	height: 50vh;
+	width: 40%;
+	left: calc((100vw - 40%)/2);
+	top: 0px;
+	background: none;
+	/*animation: expand 1s 1 ease-in;
+	animation-fill-mode: forwards;  */
+	border: 1px white solid;
 }
 
 .land {
@@ -57,9 +63,18 @@ svg {
 	position: absolute;
 	fill-opacity: 0;
 	stroke: #F80;
-	stroke-width: 1;
+	stroke-width: 2;
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
+	animation: draw 2.1s infinite linear;
+}
+
+.blankline {
+	position: absolute;
+	fill-opacity: 0;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	stroke-linecap: round;
 	animation: draw 2.1s infinite linear;
 }
 

@@ -1,0 +1,13 @@
+.credits-layer {
+	text-align: center;
+	color: #FFF2;
+}
+
+.credit-name {
+	display: inline-block;
+	text-anchor: end;
+}
+
+.credit-role {
+	display: inline-block;
+}
