@@ -16,7 +16,7 @@ function drawTree(clickHandler) {
 				},
 				{
 					"name": "Hamill",
-					"description": "Ancenstry: English (Yorkshire): nickname for a scarred or maimed person, from Middle English, hamel \"mutilated\", \"crooked\".",
+					"description": "Ancestry: English (Yorkshire): nickname for a scarred or maimed person, from Middle English, hamel \"mutilated\", \"crooked\".",
 					"parent": "Top Level"
 				}
 			]

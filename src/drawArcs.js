@@ -126,7 +126,7 @@ function launchSequenceSample() {
 		const id = `path_crew_${i}`
 		newPath.setAttribute('class', 'blankline');
 		newPath.setAttribute("id", id)
-		newPath.setAttribute('stroke-width', destinations[destinationCodes[i]] > 10 ? 15 : destinations[destinationCodes[i]]);
+		newPath.setAttribute('stroke-width', destinations[destinationCodes[i]] > 10 ? 15 : destinations[destinationCodes[i]] * 1.5);
 		newPath.setAttribute('stroke', `hsl(${parseInt(i/destinationCodes.length*256)},${100}%,${60}%)`);
 		newPath.setAttribute('d', `M ${originCoords.cx.animVal.value},${originCoords.cy.animVal.value+0.5} L ${destinationCoords.cx.animVal.value},${destinationCoords.cy.animVal.value+0.5}`);
 		document.getElementById('land-centroids-and-arcs').appendChild(newPath);
@@ -217,3 +217,9 @@ async function launchNameChange() {
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+document.addEventListener("keypress", function(event) {
+    if (event.keyCode == 13) {
+        launchNameChange();
+    }
+})
